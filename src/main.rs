@@ -34,7 +34,7 @@ async fn main() -> std::io::Result<()> {
 
     HttpServer::new(|| {
         let cors = Cors::default()
-            .allowed_origin("http://127.0.0.1:3007") // Replace with the actual origin you want to allow
+            .allowed_origin("http://127.0.0.1:3000") // Replace with the actual origin you want to allow
             .allowed_methods(vec!["GET", "POST"])
             .allowed_headers(vec![header::AUTHORIZATION, header::ACCEPT])
             .allowed_header(header::CONTENT_TYPE)
